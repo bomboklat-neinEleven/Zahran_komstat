@@ -11,3 +11,5 @@ new_column <- mtcars$wt / mtcars$hp
 summary(new_column)
 
 cor(mtcars$mpg, mtcars$wt)
+
+aggregate(mpg ~ cyl, data = mtcars, mean)
