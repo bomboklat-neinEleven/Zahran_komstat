@@ -22,3 +22,10 @@ plot(mtcars$hp, mtcars$qsec,
      ylab = "1/4 Mile Time (qsec)",
      pch = 16,        
      col = "darkblue") 
+
+boxplot(wt ~ carb, data = mtcars,
+        main = "Distribusi Berat Mobil Berdasarkan Karburator",
+        xlab = "Jumlah Karburator",
+        ylab = "Berat (1000 lbs)",
+        col = "lightgreen",
+        border = "darkgreen")
