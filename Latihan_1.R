@@ -28,3 +28,5 @@ boxplot(mpg ~ cyl, data = mtcars,
         ylab="MPG", 
         col="orange")
 
+model_regresi <- lm(mpg ~ hp + wt, data = mtcars)
+summary(model_regresi)
