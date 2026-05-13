@@ -15,3 +15,5 @@ cor(mtcars$mpg, mtcars$wt)
 aggregate(mpg ~ cyl, data = mtcars, mean)
 
 t.test(mpg ~ am, data = mtcars)
+
+max(mtcars$mpg)
