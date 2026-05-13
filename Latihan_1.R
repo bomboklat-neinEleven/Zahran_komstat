@@ -21,3 +21,10 @@ plot(mtcars$wt, mtcars$mpg,
      xlab="Berat (1000 lbs)", 
      ylab="Miles Per Gallon", 
      pch=19, col="blue")
+
+boxplot(mpg ~ cyl, data = mtcars, 
+        main="Efisiensi BBM berdasarkan Silinder",
+        xlab="Jumlah Silinder", 
+        ylab="MPG", 
+        col="orange")
+
