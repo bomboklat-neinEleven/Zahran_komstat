@@ -33,14 +33,5 @@ boxplot(wt ~ carb, data = mtcars,
 model_linear <- lm(mpg ~ wt + hp, data = mtcars)
 summary(model_linear)
 
-
-
-
-
-
-
-
-
-
-
-
+model_logistik <- glm(am ~ mpg + hp, data = mtcars, family = "binomial")
+summary(model_logistik)
