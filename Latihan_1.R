@@ -29,3 +29,18 @@ boxplot(wt ~ carb, data = mtcars,
         ylab = "Berat (1000 lbs)",
         col = "lightgreen",
         border = "darkgreen")
+
+model_linear <- lm(mpg ~ wt + hp, data = mtcars)
+summary(model_linear)
+
+
+
+
+
+
+
+
+
+
+
+
