@@ -16,4 +16,9 @@ aggregate(mpg ~ cyl, data = mtcars, mean)
 
 t.test(mpg ~ am, data = mtcars)
 
-
+plot(mtcars$hp, mtcars$qsec,
+     main = "Hubungan Horsepower vs Kecepatan",
+     xlab = "Horsepower (hp)",
+     ylab = "1/4 Mile Time (qsec)",
+     pch = 16,        
+     col = "darkblue") 
