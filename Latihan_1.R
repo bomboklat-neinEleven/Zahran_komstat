@@ -15,3 +15,9 @@ cor(mtcars$mpg, mtcars$wt)
 aggregate(mpg ~ cyl, data = mtcars, mean)
 
 t.test(mpg ~ am, data = mtcars)
+
+plot(mtcars$wt, mtcars$mpg, 
+     main="Hubungan Berat Mobil vs MPG",
+     xlab="Berat (1000 lbs)", 
+     ylab="Miles Per Gallon", 
+     pch=19, col="blue")
