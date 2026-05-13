@@ -15,3 +15,24 @@ cor(mtcars$mpg, mtcars$wt)
 aggregate(mpg ~ cyl, data = mtcars, mean)
 
 t.test(mpg ~ am, data = mtcars)
+
+plot(mtcars$hp, mtcars$qsec,
+     main = "Hubungan Horsepower vs Kecepatan",
+     xlab = "Horsepower (hp)",
+     ylab = "1/4 Mile Time (qsec)",
+     pch = 16,        
+     col = "darkblue") 
+
+boxplot(wt ~ carb, data = mtcars,
+        main = "Distribusi Berat Mobil Berdasarkan Karburator",
+        xlab = "Jumlah Karburator",
+        ylab = "Berat (1000 lbs)",
+        col = "lightgreen",
+        border = "darkgreen")
+
+model_linear <- lm(mpg ~ wt + hp, data = mtcars)
+summary(model_linear)
+
+model_logistik <- glm(am ~ mpg + hp, data = mtcars, family = "binomial")
+summary(model_logistik)
+
