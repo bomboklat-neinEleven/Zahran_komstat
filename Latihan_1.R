@@ -9,3 +9,5 @@ summary(sorted_cars)
 
 new_column <- mtcars$wt / mtcars$hp
 summary(new_column)
+
+cor(mtcars$mpg, mtcars$wt)
