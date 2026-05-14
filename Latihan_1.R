@@ -35,3 +35,12 @@ summary(model_linear)
 
 model_logistik <- glm(am ~ mpg + hp, data = mtcars, family = "binomial")
 summary(model_logistik)
+
+# ANOVA
+mtcars$cyl <- as.factor(mtcars$cyl)
+
+model_anova <- aov(mpg ~ cyl, data = mtcars)
+
+summary(model_anova)
+
+TukeyHSD(model_anova)
